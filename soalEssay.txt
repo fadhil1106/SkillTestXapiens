@@ -1,2 +1,70 @@
 1. Bahasa pemrograman GO adalah bahasa yang dikembangkan oleh Google pada tahun 2007 oleh Robert Griesemer, Rob Pike, dan Ken Thompson.
-Bahasa pemrograman ini menyediakan Garbage Collection, Type Safety dll.
+Bahasa pemrograman ini menyediakan Garbage Collection, Type Safety dll. Golang didesain untuk meningkatkan produktifitas programming di era multicore, networked machines dan large codebases. Karakteristik dari Golang adalah:
+    - Static Typing dan efisiensi run-time seperti C
+    - Readability dan Usability seperti Python dan Javascript
+    - High performance networking dan multiprocessing
+Golang dipublikasikan pada November 2009 dan Versi 1.0 dirilis pada maret 2012. Golang saat ini sangat banyak digunakan di berbagai organisasi dan project open-source.
+
+Golang dipengaruhi oleh C, tetapi lebih memperhatikan pada Simplicity dan Safety.
+Dalam bahasa program GO, deklarasi atau inisialisasi variable dapat dilakukan tanpa menuliskan tipe data variabel.
+
+
+2. Struktur Dasar Golang 
+    - Deklarasi package
+        Package adalah pengorganisasian file yang ada atau nama folder. Golang dapat dijalankan jika memiliki package main. Jika kita memiliki modul yang berada di folder berbeda, maka dapat mengisi nama package sesuai dengan folder tempat modul tersebut.
+        contoh:
+        package main
+
+    - import library
+        import digunakan untuk memanggil library yang ingin digunakan.
+        penulisan import dapat dilakukan satu persatu atau dapat digabung dengan kurung
+        contoh:
+        import "library 1"
+        import "library 2"
+        atau
+        import (
+            "library 1"
+            "library 2"
+        )
+    - Fungsi utama / main method
+        Main method adalah method yang wajib ada. Method ini akan dieksekusi pertama kali saat program dijalankan.
+        penulisan method main menggunakan pembuka func dan nama method main()
+        contoh:
+        func main(){
+            ekspresi / statement
+        }
+    - Ekspresi
+        Ekspresi atau statement adalah bagian terkecil dari Struktur program. kode pada bagian statement dapat diartikan sebagai kegiatan yang dilakukan oleh program. Dalam penulisan statement kode titik koma(;) tidak diperlukan diakhir statement
+        contoh:
+        fmt.Println("Hello World!)
+
+  Blok program
+    Blok kode adalah tanda yang digunakan membungkus kode lain. Sifatnya diawali dengan tanda { dan diakhiri tanda }
+    contoh penulisan blok kondisi:
+    if a > b {
+        statement
+    }
+
+  Penulisan komentar
+    Komentar merupakan teks yang ketika program dijalankan maka tidak akan  dieksekusi
+    penulisan komentar dibagi 2 yaitu:
+    inline, menggunakan 2 garis miring // untuk satu baris kode
+    multiline, menggunakan garis miring diikuti bintang /* ........ */ untuk lebih dari satu baris kode
+
+  Penulisan variabel
+    penulisan variabel dapat dilakukan dengan menuliskan tipe data atau tidak.
+    contoh penulisan menggunakan tipe data:
+    var nama string = "nama"
+    contoh penulisan tanpa tipe data:
+    var nama = "nama"
+    atau
+    nama := nama
+
+    untuk mendeklarasikan variabel lebih dari 1 dapat dilakukan dengan cara:
+    var satu, dua, tiga string
+    satu, dua, tiga = "satu", "dua", "tiga"
+    atau
+    var satu, dua, tiga string = "satu", "dua", "tiga"
+    atau
+    satu, dua, tiga := "satu", "dua", "tiga"
+    
