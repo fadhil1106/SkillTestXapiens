@@ -1,0 +1,2 @@
+1. Bahasa pemrograman GO adalah bahasa yang dikembangkan oleh Google pada tahun 2007 oleh Robert Griesemer, Rob Pike, dan Ken Thompson.
+Bahasa pemrograman ini menyediakan Garbage Collection, Type Safety dll.
